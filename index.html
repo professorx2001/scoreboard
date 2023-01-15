@@ -1,0 +1,46 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+       
+    </head>
+    <body>
+        <div id="main_container">
+            <div class="container">
+                
+                <div id="part1">
+                <h3 class="main">HOME</h3>
+                <div class="score_box">
+                <div id="home_score" class="score">00</div>
+                </div>
+                <div class="button_parent">
+                    <button class="score_incr" onclick="increment1()">+1</button>
+                    <button class="score_incr" onclick="increment2()">+2</button>
+                    <button class="score_incr" onclick="increment3()">+3</button>
+                </div>
+                
+            </div>
+            <div id="part2">
+                <h3 class="main">GUEST</h3>
+                <div class="score_box">
+                    <div id="guest_score" class="score">00</div>
+                </div>
+                <div class="button_parent">
+                    <button class="score_incr" onclick="gincrement1()">+1</button>
+                    <button class="score_incr" onclick="gincrement2()">+2</button>
+                    <button class="score_incr" onclick="gincrement3()">+3</button>
+                </div>
+            </div>  
+        </div> 
+        <div id="second_container">
+            <p id="counter" class="second_childs">Countdown</p>
+            <!-- need to fix extra space in button of new game negative padding is not helping -->
+            <button id="new_game" class="second_childs" onclick="refresh()">
+                New Game
+            </button>
+            
+            
+        </div>
+        <script src="index.js"></script>
+               
+    </body>
+</html>
